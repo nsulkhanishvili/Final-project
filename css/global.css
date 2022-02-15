@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.s-1 {
+  background-image: url(../images/section-1.png);
+  background-color: yellow;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.s-1 .container-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.s-1 .container-header .burger-bar {
+  display: none;
+}
+
+.s-1 .container-header .logo {
+  padding: 40px 180px;
+}
+
+.s-1 .container-header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.s-1 .container-header .nav > .ul-block1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  height: 90px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  font-weight: bold;
+  background-color: #281923;
+  opacity: 0.5;
+}
+
+.s-1 .container-header .nav > .ul-block1 > :hover {
+  background-color: #A80E0E;
+}
+
+.s-1 .container-header .nav > .ul-block1 > :first-child {
+  margin-left: 30px;
+}
+
+.s-1 .container-header .nav > .ul-block1 > :last-child {
+  margin-right: 30px;
+}
+
+.s-1 .container-header .nav > .ul-block2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 350px;
+  height: 90px;
+  background-color: #A80E0E;
+  padding-top: 40px;
+}
+
+@media (max-width: 1024px) {
+  .s-1 .container-header .nav {
+    display: none;
+  }
+  .s-1 .container-header .burger-bar {
+    display: block;
+    color: #A80E0E;
+    font-size: 40px;
+    padding: 10px;
+  }
+}
+
+.s-1 .div-s1 {
+  display: block;
+  width: 782px;
+  height: 264px;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  margin-top: 100px;
+}
+
+.s-1 .div-s1 > h1 {
+  font-size: 96px;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-left: 215px;
+}
+
+.s-1 .div-s1 > .relative {
+  position: relative;
+  width: 742px;
+  height: 132px;
+  background-image: url(../images/img-s1.png);
+}
+
+.s-1 .div-s1 > .relative > p {
+  position: absolute;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.s-1 .button-s1 {
+  width: 300px;
+  height: 80px;
+  border-radius: 30px;
+  background-color: #FFAA00;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  color: #A80E0E;
+  font-weight: bold;
+  margin-left: 220px;
+  padding: 10px;
+}
+
+.s-1 .button-s1:hover {
+  -webkit-box-shadow: 5px 10px 15px;
+          box-shadow: 5px 10px 15px;
+}
+/*# sourceMappingURL=global.css.map */

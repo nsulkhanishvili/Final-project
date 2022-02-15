@@ -1,0 +1,27 @@
+@mixin container-parms($max, $width:100%){
+    max-width: $max;
+    width: $width;
+}
+
+@mixin flex-parms($justify:space-between, $alian:center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $alian;
+}
+
+@mixin box-wh ($width, $heigth){
+    width: $width;
+    height: $heigth;
+}
+
+@mixin transform{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin font-parms($size, $family, $color){
+    font-size: $size;
+    font-family: $family;
+    color: $color;
+}

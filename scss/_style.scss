@@ -1,0 +1,117 @@
+.s-1 {
+    background-image: url(../images/section-1.png);
+    background-color: yellow;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    .container-header {
+        //@include container-parms($container-header);
+        display: flex;
+        justify-content: space-between;
+
+        .burger-bar {
+            display: none;
+        }
+
+        .logo {
+            padding: 40px 180px;
+
+        }
+
+        .nav {
+            display: flex;
+
+
+            &>.ul-block1 {
+                @include flex-parms;
+                @include box-wh(400px, 90px);
+                @include font-parms($header-font, $font-primery, $font-color1);
+                font-weight: bold;
+                background-color: $header-color;
+                opacity: 0.5;
+
+                &>:hover {
+                    background-color: $mane-color1;
+                }
+
+                &>:first-child {
+                    margin-left: 30px;
+                }
+
+                &>:last-child {
+                    margin-right: 30px;
+                }
+
+            }
+
+            &>.ul-block2 {
+                display: flex;
+                justify-content: space-around;
+                @include box-wh(350px, 90px);
+                background-color: $mane-color1;
+                padding-top: 40px;
+            }
+
+        }
+
+        @media (max-width:$tablet-break) {
+            .nav {
+                display: none;
+            }
+
+            .burger-bar {
+                display: block;
+                color: $mane-color1;
+                font-size: 40px;
+                padding: 10px;
+
+            }
+        }
+        @media (max-width:$tablet-break) {}
+    }
+
+
+    .div-s1 {
+        display: block;
+        @include box-wh(782px, 264px);
+        transform: rotate(-3deg);
+        margin-top: 100px;
+
+        &>h1 {
+            @include font-parms($h1, $font-secondary, $font-color1);
+            font-weight: bold;
+            margin-left: 215px;
+        }
+
+        &>.relative {
+            position: relative;
+            @include box-wh(742px, 132px, );
+            background-image: url(../images/img-s1.png);
+
+
+
+
+            &>p {
+                position: absolute;
+                @include font-parms($font30, $font-primery, $font-color1);
+                font-weight: bold;
+                @include transform;
+
+            }
+        }
+    }
+    .button-s1{
+        @include box-wh(300px, 80px);
+        border-radius: 30px;
+        background-color: $mane-color2;
+        @include font-parms (25px, $font-secondary, $mane-color1);
+        font-weight: bold;
+        margin-left: 220px;
+        padding: 10px;
+    }   
+    .button-s1:hover{
+        box-shadow: 5px 10px 15px;
+    }
+}
