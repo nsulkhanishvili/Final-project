@@ -1,0 +1,107 @@
+//page 2
+
+.s-2 {
+    @extend %container;
+
+    &>.div1-s2 {
+        display: block;
+
+
+        &>h3 {
+            @include font-parms($h3, $font-secondary, $mane-color1);
+            font-weight: 700;
+            text-align: center;
+        }
+
+        &>img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+
+        &>p {
+            @include font-parms ($font20, $font-primery, $font-color2);
+            text-align: center;
+            line-height: 40px;
+        }
+    }
+
+    .container {
+        @include flex-parms(space-between, center);
+        margin-bottom: 70px;
+
+        .card {
+            @include box-wh(150px, 150px);
+            margin-top: 70px;
+
+            &:hover {
+                opacity: 0.5;
+            }
+
+
+            &>img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+
+            &>p {
+                @include font-parms($font20, $font-primery, $font-color2);
+                text-align: center;
+                margin-top: 35px;
+                margin-bottom: 35px;
+
+            }
+        }
+    }
+
+}
+
+.s-3 {
+    background-image: url(../images/seection-3.jpg);
+    background-color: yellow;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+
+    .div1-s3 {
+        @include flex-parms(justify-content, center);
+
+
+
+        &>.relative {
+            position: relative;
+            @include box-wh(800px, 132px, );
+            background-image: url(../images/img-s3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+
+
+
+
+            &>p {
+                position: absolute;
+                @include font-parms($font30, $font-secondary, $font-color1);
+                font-weight: bold;
+                @include transform;
+
+            }
+        }
+
+        .div2-s3 {
+            display: block;
+            margin: 150px;
+
+            &>p {
+                @include font-parms($font20, $font-primery, $font-color1);
+            }
+        }
+    }
+}

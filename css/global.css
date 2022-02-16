@@ -106,12 +106,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 400px;
+  width: 600px;
   height: 90px;
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  color: #FFFFFF;
-  font-weight: bold;
   background-color: #281923;
   opacity: 0.5;
 }
@@ -126,6 +122,13 @@ a {
 
 .s-1 .container-header .nav .ul-block1 > :last-child {
   margin-right: 30px;
+}
+
+.s-1 .container-header .nav .ul-block1 > li > a {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
 @media (max-width: 1024px) {
@@ -426,6 +429,47 @@ a {
   background-position: center;
   height: 100vh;
   position: relative;
+}
+
+.s-5 .nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.s-5 .nav .ul-block1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 600px;
+  height: 90px;
+  background-color: #281923;
+  opacity: 0.5;
+}
+
+.s-5 .nav .ul-block1 > :hover {
+  background-color: #A80E0E;
+}
+
+.s-5 .nav .ul-block1 > :first-child {
+  margin-left: 30px;
+}
+
+.s-5 .nav .ul-block1 > :last-child {
+  margin-right: 30px;
+}
+
+.s-5 .nav .ul-block1 > li > a {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
 .s-5 .div-s5 {
