@@ -1,3 +1,4 @@
+//page 1
 .s-1 {
     background-image: url(../images/section-1.png);
     background-color: yellow;
@@ -24,7 +25,7 @@
             display: flex;
 
 
-            &>.ul-block1 {
+            .ul-block1 {
                 @include flex-parms;
                 @include box-wh(400px, 90px);
                 @include font-parms($header-font, $font-primery, $font-color1);
@@ -46,14 +47,6 @@
 
             }
 
-            &>.ul-block2 {
-                display: flex;
-                justify-content: space-around;
-                @include box-wh(350px, 90px);
-                background-color: $mane-color1;
-                padding-top: 40px;
-            }
-
         }
 
         @media (max-width:$tablet-break) {
@@ -69,6 +62,7 @@
 
             }
         }
+
         @media (max-width:$tablet-break) {}
     }
 
@@ -102,7 +96,8 @@
             }
         }
     }
-    .button-s1{
+
+    .button-s1 {
         @include box-wh(300px, 80px);
         border-radius: 30px;
         background-color: $mane-color2;
@@ -110,8 +105,237 @@
         font-weight: bold;
         margin-left: 220px;
         padding: 10px;
-    }   
-    .button-s1:hover{
+    }
+
+    .button-s1:hover {
         box-shadow: 5px 10px 15px;
+    }
+}
+
+//page 2
+
+.s-2 {
+    @extend %container;
+
+    &>.div1-s2 {
+        display: block;
+
+
+        &>h3 {
+            @include font-parms($h3, $font-secondary, $mane-color1);
+            font-weight: 700;
+            text-align: center;
+        }
+
+        &>img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+
+        &>p {
+            @include font-parms ($font20, $font-primery, $font-color2);
+            text-align: center;
+            line-height: 40px;
+        }
+    }
+
+    .container {
+        @include flex-parms(space-between, center);
+        margin-bottom: 70px;
+
+        .card {
+            @include box-wh(150px, 150px);
+            margin-top: 70px;
+
+            &:hover {
+                opacity: 0.5;
+            }
+
+
+            &>img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+
+            &>p {
+                @include font-parms($font20, $font-primery, $font-color2);
+                text-align: center;
+                margin-top: 35px;
+                margin-bottom: 35px;
+
+            }
+        }
+    }
+
+}
+
+.s-3 {
+    background-image: url(../images/seection-3.jpg);
+    background-color: yellow;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+
+    .div1-s3 {
+        @include flex-parms(justify-content, center);
+
+
+
+        &>.relative {
+            position: relative;
+            @include box-wh(800px, 132px, );
+            background-image: url(../images/img-s3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+
+
+
+
+            &>p {
+                position: absolute;
+                @include font-parms($font30, $font-secondary, $font-color1);
+                font-weight: bold;
+                @include transform;
+
+            }
+        }
+
+        .div2-s3 {
+            display: block;
+            margin: 150px;
+
+            &>p {
+                @include font-parms($font20, $font-primery, $font-color1);
+            }
+        }
+    }
+}
+
+//page 3
+.s-4 {
+    @include container-parms($container-size);
+    margin: 0 auto;
+
+    .div1-s4 {
+        display: block;
+
+
+        &>h3 {
+            @include font-parms($h3, $font-secondary, $mane-color1);
+            font-weight: 700;
+            text-align: center;
+        }
+
+        &>img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+
+        &>p {
+            @include font-parms ($font20, $font-primery, $font-color2);
+            text-align: center;
+            line-height: 40px;
+        }
+    }
+
+    .container {
+        @include flex-parms(space-between, center);
+        flex-wrap: wrap;
+        margin-bottom: 70px;
+        margin-top: 40px;
+
+        .card {
+            width: 30%;
+            padding: 10px;
+
+            &>img {
+                width: 90%;
+            }
+
+            &>p {
+                @include font-parms($header-font, $font-primery, $font-color3);
+                line-height: 25px;
+
+            }
+
+            &>h5 {
+                @include font-parms($h5, $font-primery, $font-color2);
+                line-height: 35px;
+            }
+
+            &>button {
+                @include box-wh(165px, 40px);
+                border-radius: 20px;
+                background-color: $mane-color2;
+                color: $font-color1;
+            }
+
+            &>h6 {
+                @include font-parms($h6, $font-primery, $mane-color1);
+                line-height: 35px;
+            }
+        }
+    }
+
+    &>.button-s4 {
+        @include box-wh(255px, 68px);
+        border-radius: 35px;
+        background-color: $mane-color1;
+        margin: 0 auto;
+        text-align: center;
+        padding: 25px;
+        margin-bottom: 15px;
+
+        &>a {
+            @include font-parms($h6, $font-primery, $font-color1);
+
+        }
+    }
+}
+
+//page-4
+.s-5 {
+    background-image: url(../images/section-5.jpg);
+    background-color: yellow;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+
+    .div-s5 {
+        position: absolute;
+        top: 200px;
+        left: 200px;
+
+        &>h2 {
+            @include font-parms($h2, $font-secondary, $font-color1);
+            line-height: 70px;
+        }
+
+        &>h5 {
+            @include font-parms($h5, $font-primery, $font-color1);
+            line-height: 35px;
+        }
+
+
+        &>p {
+            text-align: center;
+            font-size: 60px;
+            margin-top: 0px;
+            color: $mane-color2;
+        }
     }
 }
