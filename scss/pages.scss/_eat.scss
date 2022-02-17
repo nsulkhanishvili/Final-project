@@ -22,7 +22,7 @@
         }
 
         &>p {
-            @include font-parms ($font20, $font-primery, $font-color2);
+            @include font-parms ($font20, $font-primery, black);
             text-align: center;
             line-height: 40px;
         }
