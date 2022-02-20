@@ -1,6 +1,6 @@
     <!DOCTYPE html>
     <html lang="en">
-    
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,71 +24,71 @@
         <script src="https://kit.fontawesome.com/084011dc8f.js" crossorigin="anonymous"></script>
     </head>
 
-<body>
-    <section class="s-5">
-        <div class="div-nav-s5">
-        <nav class="nav">
-            <ul class="ul-nav">
-                <li>
-                    <a href="../index.html"> Home</a>
-                </li>
-                <li>
-                    <a href="../pages/menu.html"> Menu</a>
-                </li>
-                <li>
-                    <a href="offer.html">Offer</a>
-                </li>
-                <li>
-                    <a href="../pages/eat.html">Testiminials</a>
-                </li>
-                <li>
-                    <a href="../pages/contact.html">Contact Us</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="burger-bar">
-            <i class="fas fa-bars"></i>
-        </div>
-    </div>
-        <div class="div-s5">
-            <h2>Happy Hours</h2>
-            <h5>Friday 5pm – 8pm</h5>
-            <h5>40% off All premium pizzas</h5>
+    <body>
+        <section class="s-5">
+            <div class="div-nav-s5">
+                <nav class="nav">
+                    <ul class="ul-nav">
+                        <li>
+                            <a href="../index.html"> Home</a>
+                        </li>
+                        <li>
+                            <a href="../pages/menu.html"> Menu</a>
+                        </li>
+                        <li>
+                            <a href="offer.html">Offer</a>
+                        </li>
+                        <li>
+                            <a href="../pages/eat.html">Want To Eat?</a>
+                        </li>
+                        <li>
+                            <a href="../pages/contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="burger-bar">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="div-s5">
+                <h2>Happy Hours</h2>
+                <h5>Friday 5pm – 8pm</h5>
+                <h5>40% off All premium pizzas</h5>
 
-            <p id="demo"></p>
-        </div>
-    </section>
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+                <p id="demo"></p>
+            </div>
+        </section>
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
 
-        // Update the count down every 1 second
-        var x = setInterval(function () {
+            // Update the count down every 1 second
+            var x = setInterval(function () {
 
-            // Get today's date and time
-            var now = new Date().getTime();
+                // Get today's date and time
+                var now = new Date().getTime();
 
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
 
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Output the result in an element with id="demo"
-            document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
-                minutes + "m " + seconds + "s ";
+                // Output the result in an element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+                    minutes + "m " + seconds + "s ";
 
-            // If the count down is over, write some text 
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    </script>
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
 
-</body>
+    </body>
 
-</html>
+    </html>

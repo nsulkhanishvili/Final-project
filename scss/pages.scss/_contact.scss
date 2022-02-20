@@ -1,0 +1,157 @@
+//page-5
+.s-6 {
+    background-color: $mane-color1;
+
+    .div-nav-s5 {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        .burger-bar {
+            display: none;
+        }
+
+        .nav {
+            display: flex;
+
+
+            .ul-nav {
+                @include flex-parms;
+                @include box-wh(600px, 90px);
+                background-color: $header-color;
+                opacity: 0.5;
+
+                &>:hover {
+                    background-color: $mane-color1;
+                }
+
+                &>:first-child {
+                    margin-left: 30px;
+                }
+
+                &>:last-child {
+                    margin-right: 30px;
+                }
+
+                &>li {
+                    &>a {
+                        @include font-parms($header-font, $font-primery, $font-color1);
+                        font-weight: bold;
+                    }
+                }
+            }
+
+        }
+
+        @media (max-width:$tablet-break) {
+            .nav {
+                display: none;
+            }
+
+            .burger-bar {
+                display: block;
+                color: $mane-color2;
+                font-size: 40px;
+                padding: 10px;
+
+            }
+        }
+    }
+
+    .div1-s6 {
+        @extend %container;
+        @include flex-parms(space-between, center);
+
+
+        .block1 {
+            display: block;
+            padding: 100px 0;
+
+
+
+            &>.button-a {
+                @include box-wh(120px, 40px);
+                border-radius: 15px;
+                padding: 10px;
+                background-color: $mane-color2;
+                @include font-parms($header-font, $font-primery, $font-color1);
+
+            }
+
+            &>h4 {
+                @include font-parms($h4, $font-secondary, $font-color1);
+                line-height: 50px;
+                margin: 20px 0;
+            }
+        }
+
+        .block1-a,
+        .block1-b {
+            @include flex-parms;
+            margin-bottom: 20px;
+
+            &>p {
+                @include font-parms($header-font, $font-primery, $font-color1);
+                line-height: 20px;
+                margin-left: 10px;
+            }
+        }
+
+        .block1-c {
+            @include flex-parms(space-around);
+            @include box-wh(200px, 60px);
+            background-color: $mane-color2;
+        }
+    }
+}
+
+.footer {
+    @extend %container;
+    @include flex-parms;
+    padding: 100px 0;
+
+    .footer-a {
+
+        &>p {
+            @include font-parms($header-font, $font-primery, black);
+            line-height: 20px;
+            margin: 20px 0;
+        }
+    }
+
+    .footer-b {
+        &>h5 {
+            @include font-parms($h5, $font-secondary, $mane-color1);
+        }
+
+        &>ul {
+            &>li {
+               margin: 10px 0;
+
+                &>a {
+                    @include font-parms($header-font, $font-primery, black);
+                    line-height: 20px;
+
+                }
+            }
+        }
+    }
+
+    .footer-c {
+        margin-top: 70px;
+
+        &>h5 {
+            @include font-parms($h5, $font-secondary, $mane-color1);
+        }
+
+        .footer-c1 {
+            @include flex-parms;
+            @include box-wh(300px, 200px);
+            flex-wrap: wrap;
+
+            &>img {
+                width: 30%;
+            }
+        }
+    }
+}
