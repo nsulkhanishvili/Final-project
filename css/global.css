@@ -153,6 +153,9 @@ a {
   .s-1 .container-header .nav {
     display: none;
   }
+  .s-1 .container-header .logo {
+    padding: 40px;
+  }
   .s-1 .container-header .burger-bar {
     display: block;
     color: #A80E0E;
@@ -215,6 +218,29 @@ a {
           box-shadow: 5px 10px 15px;
 }
 
+@media (max-width: 768px) {
+  .s-1 .div-s1 {
+    width: 400px;
+    height: 150px;
+    margin-bottom: 50px;
+  }
+  .s-1 .div-s1 > h1 {
+    font-size: 40px;
+    margin-left: 50px;
+  }
+  .s-1 .div-s1 .relative {
+    width: 350px;
+    height: 100px;
+  }
+  .s-1 .div-s1 .relative > p {
+    font-size: 16px;
+  }
+  .s-1 .button-s1 {
+    margin-left: 50px;
+    font-size: 16px;
+  }
+}
+
 .s-2 > .div1-s2 {
   display: block;
 }
@@ -240,6 +266,15 @@ a {
   color: black;
   text-align: center;
   line-height: 40px;
+}
+
+@media (max-width: 768px) {
+  .s-2 > .div1-s2 > h3 {
+    font-size: 30px;
+  }
+  .s-2 > .div1-s2 > p {
+    font-size: 16px;
+  }
 }
 
 .s-2 .container {
@@ -281,9 +316,26 @@ a {
   margin-bottom: 35px;
 }
 
+@media (max-width: 1024px) {
+  .s-2 .container > .card {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-2 .container > .card {
+    width: 50px;
+    height: 50px;
+  }
+  .s-2 .container > .card > p {
+    font-size: 13px;
+  }
+}
+
 .s-3 {
   background-image: url(../images/seection-3.jpg);
-  background-color: yellow;
+  background-color: #FFAA00;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -300,6 +352,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.s-3 .div1-s3 > img {
+  width: 45%;
 }
 
 .s-3 .div1-s3 > .relative {
@@ -325,7 +381,6 @@ a {
 }
 
 .s-3 .div1-s3 .div2-s3 {
-  display: block;
   margin: 150px;
 }
 
@@ -333,6 +388,28 @@ a {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   color: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+  .s-3 .div1-s3 .relative {
+    width: 400px;
+    height: 132px;
+  }
+  .s-3 .div1-s3 .relative > p {
+    font-size: 18px;
+  }
+  .s-3 .div1-s3 .div2-s3 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-3 .div1-s3 > img {
+    width: 100%;
+  }
+  .s-3 .div1-s3 .relative {
+    display: none;
+  }
 }
 
 .s-4 {
@@ -439,6 +516,37 @@ a {
   color: #FFFFFF;
 }
 
+@media (max-width: 1024px) {
+  .s-4 .div1-s4 > h3 {
+    font-size: 22px;
+  }
+  .s-4 .div1-s4 > p {
+    font-size: 16px;
+  }
+  .s-4 .container .card {
+    width: 45%;
+  }
+  .s-4 .container .card > :nth-child(even) {
+    padding-right: 0;
+  }
+  .s-4 .button-s4 {
+    width: 150px;
+    height: 50px;
+    padding: 15px;
+  }
+  .s-4 .button-s4 > a {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-4 .container .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
 .s-5 {
   background-image: url(../images/section-5.jpg);
   background-color: #FFAA00;
@@ -539,6 +647,15 @@ a {
   color: #FFAA00;
 }
 
+@media (max-width: 768px) {
+  .div-s5 > h2 {
+    font-size: 40px;
+  }
+  .div-s5 > h5 {
+    font-size: #281923;
+  }
+}
+
 .s-6 {
   background-color: #A80E0E;
 }
@@ -607,6 +724,8 @@ a {
 }
 
 .s-6 .div1-s6 {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -621,6 +740,7 @@ a {
 .s-6 .div1-s6 .block1 {
   display: block;
   padding: 100px 0;
+  margin-right: 20px;
 }
 
 .s-6 .div1-s6 .block1 > .button-a {
@@ -640,6 +760,12 @@ a {
   color: #FFFFFF;
   line-height: 50px;
   margin: 20px 0;
+}
+
+@media (max-width: 1024px) {
+  .s-6 .div1-s6 .block1 > h4 {
+    font-size: 22px;
+  }
 }
 
 .s-6 .div1-s6 .block1-a,
@@ -679,6 +805,19 @@ a {
   background-color: #FFAA00;
 }
 
+@media (max-width: 1024px) {
+  .s-6 .block1 > h4 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-6 .block1,
+  .s-6 .block2 {
+    width: 90%;
+  }
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -690,6 +829,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 100px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer .footer-a > p {

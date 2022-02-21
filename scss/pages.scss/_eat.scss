@@ -26,6 +26,17 @@
             text-align: center;
             line-height: 40px;
         }
+
+        @media (max-width:$smart-break) {
+
+            &>h3 {
+                font-size: $font30;
+            }
+
+            &>p {
+                font-size: $header-font;
+            }
+        }
     }
 
     .container {
@@ -56,13 +67,29 @@
 
             }
         }
-    }
 
+        @media (max-width:$tablet-break) {
+            &>.card {
+                @include box-wh(100px, 100px);
+            }
+        }
+
+        @media (max-width: $smart-break) {
+            &>.card {
+                @include box-wh(50px, 50px);
+
+                &>p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
 }
+
 
 .s-3 {
     background-image: url(../images/seection-3.jpg);
-    background-color: yellow;
+    background-color: $mane-color2;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -72,19 +99,19 @@
     .div1-s3 {
         @include flex-parms(justify-content, center);
 
+        &>img {
+            width: 45%;
+        }
+
 
 
         &>.relative {
             position: relative;
-            @include box-wh(800px, 132px, );
+            @include box-wh(800px, 132px);
             background-image: url(../images/img-s3.png);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-
-
-
-
 
             &>p {
                 position: absolute;
@@ -96,11 +123,37 @@
         }
 
         .div2-s3 {
-            display: block;
             margin: 150px;
 
             &>p {
                 @include font-parms($font20, $font-primery, $font-color1);
+            }
+        }
+    }
+
+    @media (max-width: $tablet-break) {
+        .div1-s3 {
+            .relative {
+                @include box-wh(400px, 132px);
+
+                &>p {
+                    font-size: $h6;
+                }
+            }
+
+            .div2-s3 {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: $smart-break) {
+        .div1-s3 {
+            &>img{
+                width: 100%;
+            }
+            .relative {
+                display: none;
             }
         }
     }

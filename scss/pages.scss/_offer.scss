@@ -88,4 +88,14 @@
         margin-top: 0px;
         color: $mane-color2;
     }
+
+    @media (max-width: $smart-break) {
+        &>h2 {
+            font-size: $h4;
+        }
+
+        &>h5 {
+            font-size: $header-color;
+        }
+    }
 }

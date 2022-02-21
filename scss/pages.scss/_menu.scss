@@ -81,4 +81,44 @@
 
         }
     }
+
+    @media (max-width:$tablet-break) {
+        .div1-s4 {
+
+            &>h3 {
+                font-size: $h5;
+            }
+
+            &>p {
+                font-size: $header-font;
+            }
+        }
+        .container{
+            .card{
+                width: 45%;
+
+                &>:nth-child(even){
+                    padding-right: 0;
+                }
+            }
+        }
+        .button-s4{
+            @include box-wh(150px, 50px);
+            padding: 15px;
+
+            &>a{
+                font-size: $header-font;
+                text-align: center;
+                
+            }
+        }
+    }
+    @media (max-width: $smart-break) {
+        .container{
+            .card{
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
 }

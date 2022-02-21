@@ -60,12 +60,14 @@
 
     .div1-s6 {
         @extend %container;
+        flex-wrap: wrap;
         @include flex-parms(space-between, center);
 
 
         .block1 {
             display: block;
             padding: 100px 0;
+            margin-right: 20px;
 
 
 
@@ -83,6 +85,11 @@
                 line-height: 50px;
                 margin: 20px 0;
             }
+            @media (max-width: $tablet-break){
+                &>h4{
+                    font-size: $h5
+                }
+            }
         }
 
         .block1-a,
@@ -95,6 +102,7 @@
                 line-height: 20px;
                 margin-left: 10px;
             }
+
         }
 
         .block1-c {
@@ -103,12 +111,26 @@
             background-color: $mane-color2;
         }
     }
+    @media (max-width: $tablet-break) {
+        .block1{
+            &>h4{
+                font-size: $h5;
+            }
+        }
+    }
+    @media (max-width:$smart-break) {
+        .block1,
+        .block2 {
+            width: 90%;
+        }
+    }
 }
 
 .footer {
     @extend %container;
     @include flex-parms;
     padding: 100px 0;
+    flex-wrap: wrap;
 
     .footer-a {
 
