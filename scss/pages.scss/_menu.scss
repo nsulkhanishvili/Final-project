@@ -96,6 +96,8 @@
         .container{
             .card{
                 width: 45%;
+                margin: 0 auto;
+                
 
                 &>:nth-child(even){
                     padding-right: 0;
@@ -114,10 +116,12 @@
         }
     }
     @media (max-width: $smart-break) {
+       
         .container{
             .card{
-                width: 90%;
+                width: 95%;
                 margin: 0 auto;
+                
             }
         }
     }

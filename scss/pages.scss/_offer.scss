@@ -90,12 +90,23 @@
     }
 
     @media (max-width: $smart-break) {
+        margin: 0 auto;
+
         &>h2 {
             font-size: $h4;
         }
 
         &>h5 {
             font-size: $header-color;
+        }
+    }
+    @media (max-width:$smart-break) {
+        &>h2 {
+            font-size: $font30;
+        }
+
+        &>h5 {
+            font-size: $font20;
         }
     }
 }

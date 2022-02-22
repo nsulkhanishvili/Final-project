@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,33 +19,26 @@
     <script src="https://kit.fontawesome.com/084011dc8f.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <section class="s-1">
-        <div class="container-header">
-            <a class="logo" href="index.html"><img src="images/logo.svg" alt="logo"></a>
-            <nav class="nav">
-                <ul class="ul-nav">
-                    <li>
-                        <a href="index.html"> Home</a>
-                    </li>
-                    <li>
-                        <a href="pages/menu.html"> Menu</a>
-                    </li>
-                    <li>
-                        <a href="pages/offer.html">Offer</a>
-                    </li>
-                    <li>
-                        <a href="pages/eat.html">Want To Eat?</a>
-                    </li>
-                    <li>
-                        <a href="pages/contact.html">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="burger-bar">
+<body class="body">
+    <header class="header-wraper">
+        <div class="wrapper">
+            <ul class="logo">
+                <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+            </ul>
+            <ul id="menu" class="menu-ul">
+                <li><a class="nav-a" href="index.html"> Home</a></li>
+                <li><a class="nav-a" href="pages/menu.html"> Menu</a></li>
+                <li><a class="nav-a" href="pages/offer.html">Offer</a></li>
+                <li><a class="nav-a" href="pages/eat.html">Want To Eat?</a></li>
+                <li><a class="nav-a" href="pages/contact.html">Contact Us</a></li>
+            </ul>
+
+            <div id="burger-menu" class="burger-icon">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
+    </header>
+    <section class="s-1">
         <div class="div-s1">
             <h1>Party Time!</h1>
             <div class="relative">
@@ -56,7 +48,8 @@
         </div>
         <a href="pages/eat.html" class="button-s1">order now <img src="images/img-s1-button.png" alt=""></a>
     </section>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

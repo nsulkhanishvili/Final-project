@@ -41,6 +41,7 @@
 
     .container {
         @include flex-parms(space-between, center);
+        flex-wrap: wrap;
         margin-bottom: 70px;
 
         .card {
@@ -65,22 +66,6 @@
                 margin-top: 35px;
                 margin-bottom: 35px;
 
-            }
-        }
-
-        @media (max-width:$tablet-break) {
-            &>.card {
-                @include box-wh(100px, 100px);
-            }
-        }
-
-        @media (max-width: $smart-break) {
-            &>.card {
-                @include box-wh(50px, 50px);
-
-                &>p {
-                    font-size: 13px;
-                }
             }
         }
     }
