@@ -924,7 +924,7 @@ a {
   .footer > :last-child,
   .footer > :first-child {
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 /*# sourceMappingURL=global.css.map */
