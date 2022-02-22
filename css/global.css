@@ -464,6 +464,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 70px;
@@ -532,9 +533,11 @@ a {
   .s-4 .div1-s4 > p {
     font-size: 16px;
   }
+  .s-4 .container {
+    margin: 0 auto;
+  }
   .s-4 .container .card {
     width: 45%;
-    margin: 0 auto;
   }
   .s-4 .container .card > :nth-child(even) {
     padding-right: 0;
@@ -553,7 +556,7 @@ a {
 @media (max-width: 768px) {
   .s-4 .container .card {
     width: 95%;
-    margin: 0 auto;
+    margin-left: 50px;
   }
 }
 
@@ -659,6 +662,8 @@ a {
 
 @media (max-width: 768px) {
   .div-s5 {
+    left: 100px;
+    top: 150px;
     margin: 0 auto;
   }
   .div-s5 > h2 {
@@ -828,14 +833,19 @@ a {
 }
 
 @media (max-width: 1024px) {
-  .s-6 .block1 > h4 {
+  .s-6 .div1-s6 {
+    margin: 0 auto;
+  }
+  .s-6 .div1-s6 .block1 {
+    width: 50%;
+  }
+  .s-6 .div1-s6 .block1 > h4 {
     font-size: 22px;
   }
-}
-
-@media (max-width: 768px) {
-  .s-6 .block1,
-  .s-6 .block2 {
+  .s-6 .div1-s6 .block2 {
+    width: 95%;
+  }
+  .s-6 .div1-s6 .block2 > iframe {
     width: 90%;
   }
 }
@@ -908,5 +918,13 @@ a {
 
 .footer .footer-c .footer-c1 > img {
   width: 30%;
+}
+
+@media (max-width: 768px) {
+  .footer > :last-child,
+  .footer > :first-child {
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
 }
 /*# sourceMappingURL=global.css.map */

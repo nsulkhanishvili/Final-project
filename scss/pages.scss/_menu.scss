@@ -31,6 +31,7 @@
 
     .container {
         @include flex-parms(space-between, center);
+        margin: 0 auto;
         flex-wrap: wrap;
         margin-bottom: 70px;
         margin-top: 40px;
@@ -95,9 +96,10 @@
             }
         }
         .container{
+            margin: 0 auto;
             .card{
                 width: 45%;
-                margin: 0 auto;
+                
                 
 
                 &>:nth-child(even){
@@ -116,13 +118,12 @@
             }
         }
     }
+
     @media (max-width: $smart-break) {
-       
-        .container{
+        .container{ 
             .card{
                 width: 95%;
-                margin: 0 auto;
-                
+                margin-left: 50px;
             }
         }
     }

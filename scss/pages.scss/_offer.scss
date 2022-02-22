@@ -90,6 +90,8 @@
     }
 
     @media (max-width: $smart-break) {
+        left: 100px;
+        top: 150px;
         margin: 0 auto;
 
         &>h2 {
