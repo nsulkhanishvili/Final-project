@@ -19,7 +19,7 @@
 
             .menu-ul {
                 @include flex-parms;
-                @include box-wh(600px, 90px);
+                @include box-wh(450px, 90px);
                 background-color: $header-color;
                 opacity: 0.5;
                 position: absolute;
@@ -62,7 +62,7 @@
                 }
 
                 .menu-ul {
-                    @include box-wh(200px, 150px);
+                    @include box-wh(200px, 100px);
                     display: none;
                     padding: 15px;
 

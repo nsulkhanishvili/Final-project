@@ -17,7 +17,7 @@
 
             .ul-nav {
                 @include flex-parms;
-                @include box-wh(600px, 90px);
+                @include box-wh(450px, 90px);
                 background-color: $header-color;
                 opacity: 0.5;
 

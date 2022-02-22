@@ -121,7 +121,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 600px;
+  width: 450px;
   height: 90px;
   background-color: #281923;
   opacity: 0.5;
@@ -163,7 +163,7 @@ a {
   }
   .body .header-wraper .wrapper .menu-ul {
     width: 200px;
-    height: 150px;
+    height: 100px;
     display: none;
     padding: 15px;
   }
@@ -593,7 +593,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 600px;
+  width: 450px;
   height: 90px;
   background-color: #281923;
   opacity: 0.5;
@@ -708,7 +708,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 600px;
+  width: 450px;
   height: 90px;
   background-color: #281923;
   opacity: 0.5;
