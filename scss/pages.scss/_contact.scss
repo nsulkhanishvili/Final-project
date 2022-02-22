@@ -191,10 +191,12 @@
     }
 
     @media (max-width: $smart-break) {
+        &>:nth-child() {
+            margin-right: 10px;
+        }
 
-        &>:last-child,
-        &>:first-child {
-            margin-bottom: 20px;
+        &>:nth-child(2) {
+            margin-top: 15px;
             margin-right: 10px;
         }
     }

@@ -921,9 +921,11 @@ a {
 }
 
 @media (max-width: 768px) {
-  .footer > :last-child,
-  .footer > :first-child {
-    margin-bottom: 20px;
+  .footer > :nth-child {
+    margin-right: 10px;
+  }
+  .footer > :nth-child(2) {
+    margin-top: 15px;
     margin-right: 10px;
   }
 }
