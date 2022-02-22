@@ -107,7 +107,7 @@ a {
           align-items: center;
 }
 
-.body .header-wraper .wrapper .logo {
+.body .header-wraper .wrapper > .logo {
   padding: 40px 180px;
 }
 
