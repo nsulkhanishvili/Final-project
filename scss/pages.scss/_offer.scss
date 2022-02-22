@@ -8,107 +8,129 @@
     height: 100vh;
     position: relative;
 
-    .div-nav-s5 {
-        position: absolute;
-        top: 0;
-        right: 0;
+    .wrapper {
+        @include flex-parms;
 
-        .burger-bar {
-            display: none;
+        .menu-ul {
+            @include flex-parms;
+            @include box-wh(450px, 90px);
+            background-color: $header-color;
+            opacity: 0.5;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            &>:hover {
+                background-color: $mane-color1;
+            }
+
+            &>:first-child {
+                margin-left: 30px;
+            }
+
+            &>:last-child {
+                margin-right: 30px;
+            }
+
+            &>li {
+                &>.nav-a {
+                    @include font-parms($header-font, $font-primery, $font-color1);
+                    font-weight: bold;
+                }
+            }
         }
 
-        .nav {
-            display: flex;
+        .burger-icon {
+            display: none;
+        }
+    }
 
+    @media (max-width: $tablet-break) {
 
-            .ul-nav {
-                @include flex-parms;
-                @include box-wh(450px, 90px);
-                background-color: $header-color;
-                opacity: 0.5;
+        .wrapper {
+            display: block;
 
-                &>:hover {
-                    background-color: $mane-color1;
+            .menu-ul {
+                @include box-wh(200px, 100px);
+                display: none;
+                padding: 15px;
+
+                &>li {
+                    &>.nav-a {
+                        display: block;
+                        line-height: 20px;
+
+                    }
                 }
 
                 &>:first-child {
-                    margin-left: 30px;
-                }
-
-                &>:last-child {
-                    margin-right: 30px;
-                }
-
-                &>li {
-                    &>a {
-                        @include font-parms($header-font, $font-primery, $font-color1);
-                        font-weight: bold;
-                    }
+                    margin-left: 0;
                 }
             }
 
-        }
-
-        @media (max-width:$tablet-break) {
-            .nav {
-                display: none;
-            }
-
-            .burger-bar {
-                display: block;
+            &>.burger-icon {
                 color: $mane-color1;
-                font-size: 40px;
-                padding: 10px;
+                display: block;
+                font-size: 30px;
+                position: absolute;
+                top: 40px;
+                right: 30px;
+                cursor: pointer;
+            }
 
+
+            &>.menu-ul.open-menu {
+                display: block;
             }
         }
     }
-}
 
 
-.div-s5 {
-    position: absolute;
-    top: 200px;
-    left: 200px;
-
-    &>h2 {
-        @include font-parms($h2, $font-secondary, $font-color1);
-        line-height: 70px;
-    }
-
-    &>h5 {
-        @include font-parms($h5, $font-primery, $font-color1);
-        line-height: 35px;
-    }
-
-
-    &>p {
-        text-align: center;
-        font-size: 60px;
-        margin-top: 0px;
-        color: $mane-color2;
-    }
-
-    @media (max-width: $smart-break) {
-        left: 100px;
-        top: 150px;
-        margin: 0 auto;
+    .div-s5 {
+        position: absolute;
+        top: 200px;
+        left: 200px;
 
         &>h2 {
-            font-size: $h4;
+            @include font-parms($h2, $font-secondary, $font-color1);
+            line-height: 70px;
         }
 
         &>h5 {
-            font-size: $header-color;
-        }
-    }
-    @media (max-width:$smart-break) {
-        &>h2 {
-            font-size: $font30;
+            @include font-parms($h5, $font-primery, $font-color1);
+            line-height: 35px;
         }
 
-        &>h5 {
-            font-size: $font20;
+
+        &>p {
+            text-align: center;
+            font-size: 60px;
+            margin-top: 0px;
+            color: $mane-color2;
+        }
+
+        @media (max-width: $smart-break) {
+            left: 100px;
+            top: 150px;
+            margin: 0 auto;
+
+            &>h2 {
+                font-size: $h4;
+            }
+
+            &>h5 {
+                font-size: $header-color;
+            }
+        }
+
+        @media (max-width:$smart-break) {
+            &>h2 {
+                font-size: $font30;
+            }
+
+            &>h5 {
+                font-size: $font20;
+            }
         }
     }
 }

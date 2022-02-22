@@ -26,24 +26,15 @@
 
     <body>
         <section class="s-5">
-            <div class="div-nav-s5">
-                <nav class="nav">
-                    <ul class="ul-nav">
-                        <li>
-                            <a href="../index.html"> Home</a>
-                        </li>
-                        <li>
-                            <a href="../pages/menu.html"> Menu</a>
-                        </li>
-                        <li>
-                            <a href="offer.html">Offer</a>
-                        </li>
-                        <li>
-                            <a href="../pages/contact.html">Contact Us</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="burger-bar">
+            <div class="wrapper">
+                <ul id="menu" class="menu-ul">
+                    <li><a class="nav-a" href="../index.html"> Home</a></li>
+                    <li><a class="nav-a" href="../pages/menu.html"> Menu</a></li>
+                    <li><a class="nav-a" href="pages/offer.html">Offer</a></li>
+                    <li><a class="nav-a" href="../pages/contact.html">Contact Us</a></li>
+                </ul>
+
+                <div id="burger-menu" class="burger-icon">
                     <i class="fas fa-bars"></i>
                 </div>
             </div>
@@ -54,7 +45,10 @@
 
                 <p id="demo"></p>
             </div>
-        </section >
+        </section>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="../script.js"></script>
         <script>
             // Set the date we're counting down to
             var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
